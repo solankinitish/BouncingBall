@@ -14,7 +14,7 @@ class Ball:
         self.col = color(random(255),
                          random(255),
                          random(255))
-        self.size = random(5, 50)
+        self.sz = random(5, 50)
 
     def update(self):
         self.xcor += self.xvel
@@ -25,7 +25,7 @@ class Ball:
         if self.ycor > height or self.ycor < 0:
             self.yvel = -self.yvel
         fill(self.col)
-        ellipse(self.xcor, self.ycor, self.size, self.size)
+        ellipse(self.xcor, self.ycor, self.sz, self.sz)
 
 
 def setup():
